@@ -1,0 +1,23 @@
+:root {
+    --primary_1: #1164A8;
+    --primary_2: #4DAFFF;
+    --primary_3: #309DF5;
+    --secondary_1: #A86600;
+    --secondary_2:  #F5A831;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}   

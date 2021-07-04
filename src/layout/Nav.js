@@ -1,34 +1,19 @@
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import './Nav.css'
 
 function Nav() {
-    const [links] = useState(() =>
-        [
-            {
-                name: 'one',
-                url: '/oneone'
-            },
-            {
-                name: 'two',
-                url: '/twotwo'
-            },
-            {
-                name: 'three',
-                url: "/threethree"
-            }
-        ])
-
     return (
-        <div>
-            {
-                links.map(x => (
-                    <li key={x.name}>
-                        <a href={x.url}>
-                            {x.name}
-                        </a>
-                    </li>
-                ))
-            }
-        </div>
+        <nav>
+            <Link to='/raz'>
+                <li>Raz</li>
+            </Link>
+            <Link to='/dwa'>
+                <li>Dwa</li>
+            </Link>
+            <Link to='/trzy'>
+                <li>Trzy</li>
+            </Link>
+        </nav>
     )
 }
 
