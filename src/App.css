@@ -1,17 +1,41 @@
 :root {
-    --primary_1: #1164A8;
-    --primary_2: #4DAFFF;
-    --primary_3: #309DF5;
-    --secondary_1: #A86600;
-    --secondary_2:  #F5A831;
+    --color-1: #09AD8F;
+    --color-2: #DFFFF9;
+    --color-3: #19FAD1;
+    --color-4: #AD3000;
+    --color-5: #FA5719;
 }
 
 html {
-    margin: 0;
+    height: 100%;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 75%;
 }
 
 body {
     margin: 0;
+    height: 100%;
+
+    background: var(--color-2);
+}
+
+#root {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav+div {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
 }
 
 a {
@@ -20,4 +44,4 @@ a {
 
 a:visited {
     color: inherit;
-}   
+}

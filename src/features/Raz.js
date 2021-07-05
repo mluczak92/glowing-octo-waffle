@@ -1,7 +1,7 @@
 function Raz() {
     return (
         <div>
-            <h1>Raz</h1>
+            <h3>Raz</h3>
         </div>
     )
 }
