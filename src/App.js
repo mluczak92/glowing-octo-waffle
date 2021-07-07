@@ -5,6 +5,7 @@ import Raz from './features/Raz'
 import Dwa from './features/Dwa'
 import Trzy from './features/Trzy'
 import './App.css'
+import NotFound from './layout/NotFound'
 
 function App() {
   return (
@@ -14,14 +15,17 @@ function App() {
         <Route path="/" exact>
           <Redirect to="/raz" />
         </Route>
-        <Route path="/raz">
+        <Route path="/raz" exact>
           <Raz />
         </Route>
-        <Route path="/dwa">
+        <Route path="/dwa" exact>
           <Dwa />
         </Route>
-        <Route path="/trzy">
+        <Route path="/trzy" exact>
           <Trzy />
+        </Route>
+        <Route>
+          <NotFound />
         </Route>
       </Switch>
       <Footer />

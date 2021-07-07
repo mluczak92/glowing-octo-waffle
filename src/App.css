@@ -10,7 +10,7 @@ html {
     height: 100%;
 
     font-family: 'Courier New', Courier, monospace;
-    font-size: 75%;
+    font-size: 62.5%;
 }
 
 body {
@@ -44,4 +44,34 @@ a {
 
 a:visited {
     color: inherit;
+}
+
+.f {
+    display: flex;
+}
+
+.f-c {
+    flex-direction: column;
+}
+
+.f-ai-c {
+    align-items: center;
+}
+
+.f-jc-s {
+    justify-content: start;
+}
+
+form input {
+    margin-bottom: 0.25rem;
+}
+
+form div {
+    color: brown;
+    margin-bottom: 0.5rem;
+    align-self: flex-start;
+}
+
+form button {
+    align-self: flex-end;
 }
